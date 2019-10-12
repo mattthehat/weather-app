@@ -45,7 +45,7 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About',
-        msg: 'A simple weather app built with Express JS'
+        msg: 'A simple weather app built with Express JS. Weather data is provided by mapbox.com (location data) and darksky (forcast data).'
     });
 });
 
