@@ -1,0 +1,14 @@
+{{>header}}
+<h1>{{title}}</h1>
+<p>Search for weather</p>
+<form action="/weather" class="form">
+    <div class="form__control">
+        <label for="address">Town/City:</label>
+        <input type="text" name="address" id="address" placeholder="Enter a town or city...">
+    </div>
+    <button type="submit">Search</button>
+</form>
+<div class="error"></div>
+<div class="data"></div>
+<p>Created by: {{name}}</p>
+{{>footer}}
